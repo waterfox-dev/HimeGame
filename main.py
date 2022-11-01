@@ -47,3 +47,6 @@ while running:
 # Done! Time to quit.
 
 pygame.quit()
+
+
+# Le commentaire de Clément
