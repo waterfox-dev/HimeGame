@@ -1,26 +1,18 @@
-# Simple pygame program
-
-
-# Import and initialize the pygame library
-
+from source.background import log, display_text
 import pygame
 
 pygame.init()
 
+screen = pygame.display.set_mode([1280, 720])
+pygame.display.set_caption(
+    "The Hime GAAMMMEE UWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWUUWU")
 
-# Set up the drawing window
-
-screen = pygame.display.set_mode([500, 500])
-
-
-# Run until the user asks to quit
 
 running = True
 
+background = False
+
 while running:
-
-
-    # Did the user click the window close button?
 
     for event in pygame.event.get():
 
@@ -28,25 +20,22 @@ while running:
 
             running = False
 
+        if event.type == pygame.KEYUP:
+            
+            log("Uwu")
+            background = True
 
-    # Fill the background with white
+    if background != True:
 
-    screen.fill((255, 255, 255))
+        screen.fill((0, 58, 30))
+        pygame.draw.circle(screen, (0, 88, 255), (500, 250), 50)
 
+    else:
 
-    # Draw a solid blue circle in the center
-
-    pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
-
-
-    # Flip the display
+        screen.fill((255, 58, 30))
+        pygame.draw.rect(screen, (60, 133, 38), (0, 20, 300, 300))
+        display_text("Uwu", screen)
 
     pygame.display.flip()
 
-
-# Done! Time to quit.
-
 pygame.quit()
-
-
-# Le commentaire de Clément
