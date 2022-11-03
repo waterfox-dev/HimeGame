@@ -1,0 +1,12 @@
+{
+    "name": "HimeGame",
+    "version": "a0.1",
+    "versionName": "Phoenix",
+    "settings": {
+        "dev": true
+    },
+    "developpers": [
+        "leroux-cypr",
+        "waterfox-dev"
+    ]
+}
