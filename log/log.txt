@@ -1,0 +1,5 @@
+--HIME-- || DATE : 22:33:36.777110 
+[22:33:36.777110][Test] -> It seems that's work
+[22:33:36.777110][Test] -> Just a warn test (warn)
+[22:33:36.777110][Test] -> Just a fail test (fail)
+[22:33:36.777110][Test] -> Yaaaaa ! Logger work (succeed)
